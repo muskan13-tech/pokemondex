@@ -1,0 +1,5 @@
+<app-navigation-bar></app-navigation-bar>
+<section [fxLayout]="smallerScreen? 'column' : 'row'" class="content" [style.height]="smallerScreen ? 'auto' : 'calc(100% - 104px)'">
+  <app-pokemon-detail [fxFlex]="smallerScreen ? undefined : 95"></app-pokemon-detail>
+  <app-paginator [fxFlex]="smallerScreen ? undefined : 5"></app-paginator>
+</section>
